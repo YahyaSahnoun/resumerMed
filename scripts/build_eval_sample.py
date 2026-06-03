@@ -29,7 +29,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from src.preprocessing.load_pubmed import load_pubmed_test
 
 # --- Configuration ---
-SAMPLE_SIZE = 30        # number of documents in the evaluation set
+SAMPLE_SIZE = 30         # number of documents in the evaluation set
+                         # (reduced from 100 to fit a CPU-only setup;
+                         # justified in the report as a compute constraint)
 MIN_ARTICLE_WORDS = 200  # discard very short articles
 MAX_ARTICLE_WORDS = 4000 # discard very long articles (Mistral context ≈ 8k tokens)
 MIN_ABSTRACT_WORDS = 50

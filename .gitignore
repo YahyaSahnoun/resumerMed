@@ -21,7 +21,7 @@ models/
 .ipynb_checkpoints/
 
 # Env
-.env
+.venv
 
 # OS
 .DS_Store
